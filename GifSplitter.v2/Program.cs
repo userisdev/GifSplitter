@@ -28,23 +28,26 @@ namespace GifSplitter.v2
             DirectoryInfo saveDirInfo = new DirectoryInfo(saveDirPath);
             saveDirInfo.Create();
 
+            int delay = 0;
+
             using (var image = Image.FromFile(imageFileInfo.FullName))
             {
-
                 var gd = new GifDecoder(image);
-                Console.WriteLine($"loop count : {gd.LoopCount}");
-                for(int i = 0;i < gd.FrameCount; i++)
+                for (int i = 0; i < gd.FrameCount; i++)
                 {
                     var frame = gd.GetFrame(image, i);
+                   delay = (int)frame.Delay.TotalMilliseconds;
 
                     var savePath = Path.Combine(saveDirInfo.FullName, $"{i:0000}.png");
                     frame.Image.Save(savePath);
+
                 }
 
             }
 
+            Console.WriteLine($"{Path.GetFileNameWithoutExtension(imageFileInfo.Name)},{delay}");
 
-                Console.WriteLine($"saved. : [{saveDirInfo.Name}]");
+
         }
 
         static void Main(string[] args)
