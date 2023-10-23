@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GifSplitter", "GifSplitter\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GifGen", "GifGen\GifGen.csproj", "{FA267D22-E300-48C1-AF25-DAC8BC3FB58B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GifSplitter.v2", "GifSplitter.v2\GifSplitter.v2.csproj", "{3DD0E23F-0FD6-4FAC-A151-F7F49D0C8FFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FA267D22-E300-48C1-AF25-DAC8BC3FB58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA267D22-E300-48C1-AF25-DAC8BC3FB58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA267D22-E300-48C1-AF25-DAC8BC3FB58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD0E23F-0FD6-4FAC-A151-F7F49D0C8FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD0E23F-0FD6-4FAC-A151-F7F49D0C8FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD0E23F-0FD6-4FAC-A151-F7F49D0C8FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD0E23F-0FD6-4FAC-A151-F7F49D0C8FFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
